@@ -1,0 +1,24 @@
+.meses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mes {
+    position: relative;
+    left: 10.5%;
+    width: calc(100% / 4); /* Distribuir en 4 columnas */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(252, 224, 173);
+    border: salmon 3px solid;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.mes > h2 {
+    color: red;
+}
+
+.mes > ul > li {
+    font-size: 1.3em;
+}

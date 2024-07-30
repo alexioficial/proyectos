@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.container a {
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(252, 224, 173);
+    border: salmon 3px solid;
+    font-size: 2em;
+    border-radius: 1000000px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffce72;
+}

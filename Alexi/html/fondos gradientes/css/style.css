@@ -1,0 +1,24 @@
+public void testAutoLinkWebUrl_doesNotMatchUrlsWithEmojiWithoutProtocolAndWithoutKnownTld()
+            throws Exception {
+        String url = "Thank\u263A.you";
+        assertFalse("Should not match URLs containing emoji and with unknown TLD",
+                PatternsCompat.AUTOLINK_WEB_URL.matcher(url).matches());
+    }
+
+    @Test
+    public void testAutoLinkWebUrl_doesNotMatchEmailAddress()
+            throws Exception {
+        String url = "android@android.com";
+        assertFalse("Should not match email address",
+                PatternsCompat.AUTOLINK_WEB_URL.matcher(url).matches());
+    }
+
+    @Test
+    public void testAutoLinkWebUrl_matchesDomainNameWithSurrogatePairs() throws Exception {
+        String url = "android\uD83C\uDF38.com";
+        assertTrue("Should match domain name with Unicode surrogate pairs",
+                PatternsCompat.AUTOLINK_WEB_URL.matcher(url).matches());
+    }
+
+    @Test
+    public

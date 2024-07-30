@@ -1,0 +1,49 @@
+ssed to nargs
+  Patch by Robert Leenders
+
+- bpo-37587: Make json.loads faster for long strings. (Patch by Marco
+  Paolini)
+
+- bpo-18378: Recognize "UTF-8" as a valid value for LC_CTYPE in
+  locale._parse_localename.
+
+- bpo-37531: "python3 -m test -jN --timeout=TIMEOUT" now kills a worker
+  process if it runs longer than *TIMEOUT* seconds.
+
+- bpo-37482: Fix serialization of display name in originator or destination
+  address fields with both encoded words and special chars.
+
+- bpo-37372: Fix error unpickling datetime.time objects from Python 2 with
+  seconds>=24. Patch by Justin Blanchard.
+
+- bpo-37085: Add the optional Linux SocketCAN Broadcast Manager constants,
+  used as flags to configure the BCM behaviour, in the socket module.  Patch
+  by Karl Ding.
+
+- bpo-36871: Ensure method signature is used instead of constructor
+  signature of a class while asserting mock object against method calls.
+  Patch by Karthikeyan Singaravelan.
+
+- bpo-36582: Fix ``UserString.encode()`` to correctly return ``bytes``
+  rather than a ``UserString`` instance.
+
+- bpo-34775: Division handling of PurePath now returns NotImplemented
+  instead of raising a TypeError when passed something other than an
+  instance of str or PurePath. Patch by Roger Aiudi.
+
+Documentation
+-------------
+
+- bpo-37979: Added a link to dateutil.parser.isoparse in the
+  datetime.fromisoformat documentation. Patch by Paul Ganssle
+
+- bpo-37759: Beginning edits to Whatsnew 3.8
+
+- bpo-37726: Stop recommending getopt in the tutorial for command line
+  argument parsing and promote argparse.
+
+- bpo-37256: Fix wording of arguments for :class:`Request` in
+  :mod:`urllib.request`
+
+- bpo-37004: In the documentation for difflib, a note was added explicitly
+  warning that the results of SequenceMatcher's ratio method may depend 

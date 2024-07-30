@@ -1,0 +1,14 @@
+.song {
+    cursor: pointer;
+}
+
+.song:hover {
+    color: red;
+}
+
+fieldset {
+    width: fit-content;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 10px;
+}

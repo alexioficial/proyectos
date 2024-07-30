@@ -1,0 +1,59 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#points-1,
+#points-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 2px;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: blue;
+}
+
+.block {
+    background-color: black;
+}
+
+.yellow-block {
+    background-color: yellow;
+}
+
+#points-1 {
+    color: red;
+}
+
+#points-2 {
+    color: blue;
+}
